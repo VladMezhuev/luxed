@@ -1,0 +1,43 @@
+include ../../mixins/index
+
++b.header-block.HEADER 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.header 
+      +e.logo-wrapper 
+        +e.logo.img.IMG(src="../../../static/img/main-page/logo.png")
+
+      +b.menu-icon#js-trigger
+        +e.line.--top.SPAN
+        +e.line.--middle.SPAN
+        +e.line.--bottom.SPAN
+
+      +b.menu.NAV 
+        +b.language-block
+          +e.language.--active.text.--xs.--medium.A(href="#") de
+          +e.line.text.--xs.--medium.SPAN |
+          +e.language.text.--xs.--medium.A(href="#") fr
+        +e.body#js-menu
+          +e.list.UL 
+            +b.language-block.--menu
+              +e.language.--active.text.--xs.--medium.A(href="#") DEUTCH
+              +e.line.text.--xs.--medium.SPAN |
+              +e.language.text.--xs.--medium.A(href="#") FRENCH
+            +e.item.LI
+              +e.link.A(href="#") Produkte
+            +e.item.LI
+              +e.link.A(href="#") Über Uns
+            +e.item.LI
+              +e.link.A(href="#") Projekte
+            +e.item.LI
+              +e.link.A(href="#") News
+            +e.item.LI
+              +e.link.A(href="#") Agenten
+            +e.item.LI
+              +e.link.A(href="#") Fachpartner
+        +e.social-links 
+          +e.search.IMG(src="../../../static/icons/search.svg")
+          +e.social-link.social-link.A(href="#")
+            +e.search-image.img.IMG(src="../../../static/icons/facebook.svg")
+          +e.social-link.social-link.A(href="#")
+            +e.search-image.img.IMG(src="../../../static/icons/ints.svg")
+    
