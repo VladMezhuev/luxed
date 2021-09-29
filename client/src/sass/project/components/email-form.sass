@@ -1,0 +1,100 @@
+.email-form
+  w: 100%
+  h: 333px
+  position: relative
+  d: flex
+  align-items: center
+  justify-content: center
+
+  &__
+    &bg
+      pos: absolute
+      top: 0
+      left: 0
+      right: 0
+      z-index: 1
+
+.email-form-wrapper
+  position: relative
+  w: 100%
+  z-index: 2
+  br: 1px solid rgba(255, 255, 255, .25)
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding: 15px
+
+  +mq-lg
+    flex-direction: row
+    padding: 85px 50px
+    justify-content: space-between
+
+  &__
+    &text-wrapper
+      mb: 10px
+
+      +mq-lg
+        w: 35%
+        mr: 85px
+        mb: 0px
+        
+
+    
+    &text
+      text-transform: uppercase
+      white-space: nowrap
+      fs: 15px
+
+      +mq-lg
+        fs: 25px
+
+.form-wrapper
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  w: 250px
+  z-index: 4
+
+  +mq-lg
+    flex-direction: row
+    w: 660px
+    mr: -110px
+
+  &::before
+    display: none
+    content: ""
+    position: absolute
+    top: 50%
+    left: -50px
+    w: 71px
+    h: 3px
+    bg-color: #747474
+    z-index: 1
+
+    +mq-lg
+      display: block
+  
+  &__
+    &input
+      h: 57px
+      w: 100%
+      outline: none
+      z-index: 2
+
+      +mq-lg
+        w: 75%
+    
+    &submit
+      w: 50%
+      h: 57px
+      padding: 0px 26px
+      cursor: pointer
+      mt: 10px
+
+      +mq-lg
+        w: 25%
+        mt: 0px
+
+    &image
+      transform: rotate(90deg)
