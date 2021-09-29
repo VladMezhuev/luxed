@@ -67,7 +67,12 @@
       text-decoration: none
       color: var(--theme-text-1)
       fs: $type-font-size-xs
+      transition: .3s
 
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          color: var(--theme-text-2)
+      
 .footer-menu
   display: flex
   align-items: center
@@ -95,12 +100,22 @@
     &link
       text-decoration: none
       color: var(--theme-text-2)
+      transition: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          color: var(--theme-text-1)
 
     &angepast
       text-decoration: none
       display: block
       color: var(--theme-text-1)
       mt: 45px
+      transition: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          color: var(--theme-text-2)
 
       +mq-lg
         display: none

@@ -85,22 +85,32 @@
       w: 19px
       h: 18px
       filter: brightness(0)
+      transition: .3s
 
       +mq-lg
         filter: brightness(10)
         w: 13px
         h: 12px
         mr: 12px
+      
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          transform: scale(1.2)
 
     &social-link
       ml: 12px
       display: none
+      transition: .3s
 
       +mq-lg
         display: block
 
       &:first-child
         ml: 0px
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          transform: scale(1.2)
 
 .language-block 
   display: none
@@ -113,6 +123,11 @@
       text-transform: uppercase
       color: var(--theme-text-1)
       text-decoration: none
+      transition: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          color: var(--theme-text-3)
 
       &--active
         color: var(--theme-text-3)
