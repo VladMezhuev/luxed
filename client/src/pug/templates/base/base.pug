@@ -25,9 +25,12 @@ html(lang='ru')
         include ./header
       block content
 
-      //- block photos
-      //-   include ./photos
-      //- block footer
+      block text
+        include ./text
+      block footer
+        include ./footer
+      block copyright
+        include ./copyright
 
     script(type="text/javascript", src='/static/js/vendor.js')
     script(type="text/javascript", src='/static/js/main.js')
