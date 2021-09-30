@@ -1,20 +1,36 @@
 .header-block
-  position: fixed
-  top: 0
-  right: 0
-  left: 0
   br-bottom: 1px solid rgba(246, 247, 249, .1)
   padding: 0 10px
   z-index: 111
 
-  &--main
-    bg-color: white
+  &--
+    &white
+      position: relative
+      bg-color: var(--theme-accent-white)
 
-    +mq-lg
-      bg-color: transparent
+      .header
+        &__
+          &logo-wrapper
+            filter: brightness(0)
 
-  &--white
-    bg-color: white
+      .menu
+        &__
+          &search, &social-link
+            filter: brightness(0)
+      .language-block
+        &__
+          &language, &line
+            color: black
+
+    &trans
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      bg-color: var(--theme-accent-white)
+
+      +mq-lg
+        bg-color: transparent
 
 .header
   w: 100%
@@ -116,32 +132,6 @@
       @media (hover: hover) and (pointer: fine)
         &:hover
           transform: scale(1.2)
-
-.language-block 
-  display: none
-
-  +mq-lg
-    display: block
-
-  &__
-    &language
-      text-transform: uppercase
-      color: var(--theme-text-1)
-      text-decoration: none
-      transition: .3s
-
-      @media (hover: hover) and (pointer: fine)
-        &:hover
-          color: var(--theme-text-3)
-
-      &--active
-        color: var(--theme-text-3)
-
-    &line
-      margin: 0 10px
-    
-  &--menu
-    display: flex
 
 .menu-icon
   position: relative

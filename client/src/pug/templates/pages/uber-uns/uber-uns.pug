@@ -1,0 +1,17 @@
+extends ../../base/base
+
+
+block header 
+  include ../../base/header
+
+block content 
+  +b.main.MAIN
+    include ../../../mixins/category
+    include ../../../mixins/index
+    -
+      const breadcrumbs = ['Home', 'Some page', 'Some page 2'],
+            category = 'Über Uns',
+            subcategory = ['LUXED Beleuchtungen GmbH', 'phone: +41 61 903 03 80'],
+            image = 'uber-uns.png'
+
+    +category(breadcrumbs, category, subcategory, image)
