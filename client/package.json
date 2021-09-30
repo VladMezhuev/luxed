@@ -20,6 +20,7 @@
     "dev": "npm run watch"
   },
   "dependencies": {
+    "pure-js-validator": "^1.0.1",
     "swiper": "^7.0.6",
     "vue": "^2.6.11"
   },

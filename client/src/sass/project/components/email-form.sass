@@ -1,10 +1,7 @@
 .email-form
   w: 100%
-  h: 333px
   position: relative
-  d: flex
-  align-items: center
-  justify-content: center
+  padding: 20px 0
 
   &__
     &bg
@@ -12,54 +9,46 @@
       top: 0
       left: 0
       right: 0
-      z-index: 1
 
 .email-form-wrapper
   position: relative
-  w: 100%
-  z-index: 2
   br: 1px solid rgba(255, 255, 255, .25)
-  display: flex
-  align-items: center
-  flex-direction: column
-  padding: 15px
+  padding: 40px 15px
+  h: 300px
 
   +mq-lg
-    flex-direction: row
-    padding: 85px 50px
-    justify-content: space-between
+    h: auto
+    pa: 90px 35px
 
-  &__
-    &text-wrapper
-      mb: 10px
-
-      +mq-lg
-        w: 35%
-        mr: 85px
-        mb: 0px
-        
-
-    
+  &__    
     &text
       text-transform: uppercase
       white-space: nowrap
-      fs: 15px
+      fs: 20px
 
-      +mq-lg
+      +mq-xl
         fs: 25px
+        w: 35%
+        margin: 0
+        padding: 0
 
 .form-wrapper
-  position: relative
-  display: flex
+  d: flex
   align-items: center
-  flex-direction: column
-  w: 250px
+  flex-wrap: wrap
+  position: relative
+  w: 100%
+  h: 60px
+  mt: 20px
   z-index: 4
 
-  +mq-lg
-    flex-direction: row
+  +mq-xl
+    pos: absolute
+    top: 50%
+    transform: translateY(-50%)
+    mt: 0px
+    right: -50px
     w: 660px
-    mr: -110px
 
   &::before
     display: none
@@ -72,27 +61,34 @@
     bg-color: #747474
     z-index: 1
 
-    +mq-lg
+    +mq-xl
       display: block
   
   &__
     &input
-      h: 57px
-      w: 100%
+      border: 0
       outline: none
+      w: 100%
+      h: 100%
+      padding: 20px 25px
+
       z-index: 2
 
       +mq-lg
         w: 75%
     
     &submit
-      w: 50%
-      h: 57px
+      h: 100%
+      w: 100%
+      display: flex
+      border: none
+      outline: none
       padding: 0px 26px
       cursor: pointer
       mt: 10px
 
       +mq-lg
+        padding: 20px 25px
         w: 25%
         mt: 0px
 
