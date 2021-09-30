@@ -4,7 +4,6 @@
 import { Validator } from '../../node_modules/pure-js-validator/src/validator';
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('test')
   const forms = Array.from(document.getElementsByClassName('js-form'))
   forms.forEach(form => {
     const validator = new Validator(form, async (err, is_valid) => {

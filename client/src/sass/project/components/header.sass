@@ -3,13 +3,18 @@
   top: 0
   right: 0
   left: 0
-  bg-color: white
   br-bottom: 1px solid rgba(246, 247, 249, .1)
   padding: 0 10px
   z-index: 111
 
-  +mq-lg
-    bg-color: transparent
+  &--main
+    bg-color: white
+
+    +mq-lg
+      bg-color: transparent
+
+  &--white
+    bg-color: white
 
 .header
   w: 100%

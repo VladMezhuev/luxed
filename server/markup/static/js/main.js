@@ -123,7 +123,7 @@ iconMenu.addEventListener('click', function () {
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _swiperBundle = _interopRequireDefault(__webpack_require__(16));
 
@@ -158,7 +158,7 @@ var swiper = new _swiperBundle["default"]('.slider-bg', mainSliderOptions);
 "use strict";
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(17));
 
@@ -178,7 +178,7 @@ var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(7));
 
 var _wrapNativeSuper2 = _interopRequireDefault(__webpack_require__(27));
 
-var _typeof2 = _interopRequireDefault(__webpack_require__(2));
+var _typeof2 = _interopRequireDefault(__webpack_require__(1));
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2["default"])(this, result); }; }
 
@@ -10013,7 +10013,7 @@ module.exports["default"] = module.exports, module.exports.__esModule = true;
 "use strict";
 
 
-var _typeof = __webpack_require__(2)["default"];
+var _typeof = __webpack_require__(1)["default"];
 
 var assertThisInitialized = __webpack_require__(6);
 
@@ -10161,7 +10161,7 @@ module.exports["default"] = module.exports, module.exports.__esModule = true;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _regenerator = _interopRequireDefault(__webpack_require__(32));
 
@@ -10170,7 +10170,6 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(35));
 var _validator = __webpack_require__(36);
 
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('test');
   var forms = Array.from(document.getElementsByClassName('js-form'));
   forms.forEach(function (form) {
     var validator = new _validator.Validator(form, function () {
@@ -10247,9 +10246,9 @@ module.exports = __webpack_require__(33);
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
-var _typeof2 = _interopRequireDefault(__webpack_require__(2));
+var _typeof2 = _interopRequireDefault(__webpack_require__(1));
 
 var runtime = function (exports) {
   "use strict";

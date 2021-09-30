@@ -1,7 +1,9 @@
 extends ../../base/base
 
+
 block content 
-  include ../../../mixins/index
-  include ../../components/main-slider
-  include ../../sections/main/cube
-  include ../../sections/main/email-form
+  +b.main.MAIN
+    include ../../../mixins/index
+    include ../../components/main-slider
+    include ../../sections/main/cube
+    include ../../sections/main/email-form
