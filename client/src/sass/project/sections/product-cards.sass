@@ -1,0 +1,24 @@
+.product-cards 
+  bg-color: #f6f7f9
+
+.product-cards-wrapper
+  &__
+    &row
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+
+      +mq-lg
+        margin: 0 -9px
+    
+    &cols
+      w: 100%
+      padding: 0 5px 45px
+
+      +mq-sm
+        w: 50%
+        padding: 0 15px 45px
+
+      +mq-lg
+        w: 25%

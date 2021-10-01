@@ -1,8 +1,13 @@
 .category-info
   display: flex
   align-items: center
-  justify-content: space-between
   mt: 55px
+  flex-direction: column
+
+  +mq-lg
+    flex-direction: row
+    justify-content: space-between
+
 
   &__
     &title
@@ -12,6 +17,10 @@
     &subcategory-wrapper
       display: flex
       align-items: center
+      flex-direction: column
+
+      +mq-lg
+        flex-direction: row
     
     &subcategory
       text-decoration: none
@@ -19,9 +28,12 @@
       text-transform: uppercase
       fw: 300
       color: var(--theme-text-1)
-      ml: 30px
+      ml: 0px
       position: relative
       transition: .3s
+
+      +mq-lg
+        ml: 30px
 
       &--active
         fw: 700

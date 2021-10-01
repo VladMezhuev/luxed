@@ -8,6 +8,7 @@ block content
   +b.main.MAIN
     include ../../../mixins/category
     include ../../../mixins/index
+    include ../../../mixins/product-section
     -
       const breadcrumbs = ['Home', 'Some page', 'Some page 2'],
             category = 'Produkte',
@@ -15,3 +16,61 @@ block content
             image = 'produkts.png'
 
     +category(breadcrumbs, category, subcategory, image)
+    include ../../sections/products/about-product
+    - 
+      const productCards = [
+        {
+          image: "product1.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product2.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product3.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product4.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product5.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product6.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product7.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product8.png",
+          title: "Name des Produkte",
+        },
+      ]
+    +productSection(productCards)
+    include ../../sections/products/about-product
+    - 
+      const productCards2 = [
+        {
+          image: "product1.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product2.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product3.png",
+          title: "Name des Produkte",
+        },
+        {
+          image: "product4.png",
+          title: "Name des Produkte",
+        },
+      ]
+    +productSection(productCards2)
