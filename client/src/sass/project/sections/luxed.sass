@@ -1,0 +1,101 @@
+.luxed
+  background-color: #f6f7f9
+
+.luxed-wrapper
+  background-color: #ffffff
+  color: #8d8d8d
+  padding: 75px 45px
+  position: relative
+
+  &__
+    &bg-image
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 1
+
+    &top, &middle, &bottom
+      position: relative
+      display: flex
+      align-items: center
+      z-index: 2
+
+    &top, &bottom
+      justify-content: space-between
+
+    &top
+      align-items: flex-start
+
+    &bottom
+      align-items: flex-end
+    
+    &middle
+      justify-content: center
+
+    &image-wrapper
+      &--
+        &l
+          w: 65px
+          h: 87px
+          mb: 20px
+        &u
+          w: 79px
+          h: 89px
+          mb: 20px
+        &x
+          w: 96px
+          h: 88px
+  
+        &e
+          w: 73px
+          h: 87px
+        &d
+          w: 83px
+          h: 87px
+    
+    &element-wrapper
+      display: flex
+
+      &--
+        &l, &e
+          flex-direction: row
+        &u, &d
+          flex-direction: row-reverse
+        &x
+          flex-direction: column-reverse
+          align-items: center
+
+        &e, &d
+          align-items: flex-end
+        
+    &text-part
+      w: 230px
+
+      &--
+        &x
+          w: 425px
+          text-align: center
+
+        &l, &e
+          text-align: right
+          mr: 40px
+        
+        &u, &d
+          text-align: left
+          ml: 40px
+
+    &letter-wrapper
+      display: flex
+      text-align: center
+      &--
+        &l, &u, &x
+          flex-direction: column
+        
+        &e, &d
+          flex-direction: column-reverse
+    
+    &name
+      font-size: 20px
+      font-weight: 500
+      color: #363636
