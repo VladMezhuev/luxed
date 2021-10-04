@@ -1,0 +1,41 @@
+.picture-company
+  background-color: #f6f7f9
+  padding: 80px 0 90px
+
+.picture-company-wrapper
+  &__
+    &top
+      mb: 40px
+
+    &bottom 
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+      
+
+      +mq-sm
+        margin: 0 -15px
+
+    &column
+      w: 100%
+      h: 261px
+      mt: 30px
+
+      +mq-sm
+        w: 50%
+        padding: 0 15px
+      
+      +mq-lg
+        w: 25%
+    
+    &picture-card 
+      w: 100%
+      h: 100%
+      overflow: hidden
+
+    &image
+      transition: .5s
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          transform: scale(1.1)

@@ -4,8 +4,14 @@
 .luxed-wrapper
   background-color: #ffffff
   color: #8d8d8d
-  padding: 75px 45px
   position: relative
+  padding: 20px 5px
+
+  +mq-lg
+    padding: 50px 20px
+  
+  +mq-xl
+    padding: 75px 45px
 
   &__
     &bg-image
@@ -20,29 +26,41 @@
       display: flex
       align-items: center
       z-index: 2
+      flex-direction: column
+
+      +mq-lg
+        flex-direction: row
+      
 
     &top, &bottom
-      justify-content: space-between
+      +mq-lg
+        justify-content: space-between
 
     &top
-      align-items: flex-start
+      +mq-lg
+        align-items: flex-start
 
     &bottom
-      align-items: flex-end
+      +mq-lg
+        align-items: flex-end
+        mt: 20px
     
     &middle
-      justify-content: center
+      +mq-lg
+        justify-content: center
 
     &image-wrapper
+      margin: 10px 0px
+      
       &--
         &l
           w: 65px
           h: 87px
-          mb: 20px
+          mt: 0px
         &u
           w: 79px
           h: 89px
-          mb: 20px
+          mt: 0px
         &x
           w: 96px
           h: 88px
@@ -50,50 +68,95 @@
         &e
           w: 73px
           h: 87px
+          mb: 0px
         &d
           w: 83px
           h: 87px
+          mb: 0px
     
     &element-wrapper
       display: flex
+      flex-direction: column-reverse
+
+      +mq-md
+        flex-direction: row-reverse
+        align-items: center
+
+        +mq-lg
+          align-items: flex-start
 
       &--
         &l, &e
-          flex-direction: row
+
+          +mq-lg
+            flex-direction: row
         &u, &d
-          flex-direction: row-reverse
+
+          +mq-lg
+            flex-direction: row-reverse
         &x
-          flex-direction: column-reverse
-          align-items: center
+
+          +mq-lg
+            flex-direction: column-reverse
+            align-items: center
 
         &e, &d
-          align-items: flex-end
+
+          +mq-lg
+            align-items: flex-end
         
     &text-part
-      w: 230px
+      w: 100%
+
+      +mq-md
+        w: 85%
+
+      +mq-lg
+        w: 230px
 
       &--
         &x
-          w: 425px
-          text-align: center
+
+          +mq-lg
+            w: 425px
+            text-align: center
+            mt: 10px
 
         &l, &e
-          text-align: right
-          mr: 40px
+
+          +mq-lg
+            text-align: right
+            mr: 40px
         
         &u, &d
-          text-align: left
-          ml: 40px
+
+          +mq-lg
+            text-align: left
+            ml: 40px
 
     &letter-wrapper
       display: flex
-      text-align: center
+      flex-direction: column
+      align-items: flex-start
+      w: 15%
+
+      +mq-lg
+        text-align: center
       &--
         &l, &u, &x
-          flex-direction: column
+
+          +mq-lg
+            flex-direction: column
         
         &e, &d
-          flex-direction: column-reverse
+
+          +mq-lg
+            flex-direction: column-reverse
+
+        &x
+
+          +mq-lg
+            align-items: center
     
     &name
       font-size: 20px
