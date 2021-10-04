@@ -102,6 +102,8 @@ __webpack_require__(15);
 
 __webpack_require__(31);
 
+__webpack_require__(37);
+
 /***/ }),
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -11526,6 +11528,51 @@ var Validator = function Validator() {
 };
 
 exports.Validator = Validator;
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var googleMap;
+
+function initMap() {
+  var mapContainer = document.getElementById('uber-map');
+  var coordinates = {
+    lat: 47.4752108,
+    lng: 7.7419468
+  };
+  var coordsForMarker = {
+    lat: 47.4746108,
+    lng: 7.7419468
+  };
+  var correctZoom = 18;
+  var windowInfo = document.getElementById('uber-info');
+  googleMap = new google.maps.Map(mapContainer, {
+    center: coordinates,
+    zoom: correctZoom
+  });
+  var marker = new google.maps.Marker({
+    position: coordsForMarker,
+    map: googleMap,
+    icon: '../../../static/icons/location-map.png'
+  });
+  var infowindow = new google.maps.InfoWindow({
+    content: windowInfo
+  });
+  marker.addListener('click', function () {
+    windowInfo.classList.add('is-active');
+    infowindow.open({
+      anchor: marker,
+      map: googleMap,
+      shouldFocus: true
+    });
+  });
+}
+
+window.initMap = initMap;
 
 /***/ })
 ],[12]);

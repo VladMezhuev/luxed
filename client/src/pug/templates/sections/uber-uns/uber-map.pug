@@ -1,0 +1,54 @@
+include ../../../mixins/index
+
++b.uber-map 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.uber-map-wrapper 
+      +e.top 
+        +e.title.title.H3 ADRESS
+        +e.subtitle.P #[span(class="uber-map-wrapper__span") GOOGLE MAPS |] MAPS
+      +e.bottom 
+        +e.column-location
+          +e.adress-wrapper 
+            +e.adress-category 
+              +e.image-wrapper 
+                +e.image.IMG(src="../../../static/icons/uber-uns/location.svg")
+              +e.location-info 
+                +e.text.text.--xs.--medium.P LUXED Beleuchtungen GmbH  
+                +e.text.text.--xs.--medium.P Benzburweg 18A
+                +e.text.text.--xs.--medium.P CH- 4410 Liestal
+          +e.adress-wrapper 
+            +e.adress-category 
+              +e.image-wrapper 
+                +e.image.IMG(src="../../../static/icons/uber-uns/phone.svg")
+              +e.location-info 
+                +e.text.text.--xs.--medium.A(href="tel:+41619030380") +41 61 903 03 80 
+                +e.text.text.--xs.--medium.A(href="tel:+41619030380") +41 61 903 03 80
+          +e.adress-wrapper 
+            +e.adress-category 
+              +e.image-wrapper 
+                +e.image.IMG(src="../../../static/icons/uber-uns/mail.svg")
+              +e.location-info 
+                +e.text.text.--xs.--medium.A(href="mailto: TESTTEST@gmail.com") TESTTEST@gmail.com
+          +e.adress-wrapper 
+            +e.adress-category 
+              +e.image-wrapper 
+                +e.image.IMG(src="../../../static/icons/uber-uns/clock.svg")
+              +e.location-info 
+                +e.top-info
+                  +e.text.text.--xs.--medium.P Mo – Do   
+                  +e.text.text.--xs.--medium.P 08.00 – 12.00 Uhr
+                  +e.text.text.--xs.--medium.P 13.00 – 17.30 Uhr
+                +e.bottom-info
+                  +e.text.text.--xs.--medium.P Fr
+                  +e.text.text.--xs.--medium.P 08.00 – 12.00 Uhr
+                  +e.text.text.--xs.--medium.P 13.00 – 16.30 Uhr
+        +e.column-map 
+          +b.uber-map-container#uber-map
+          +b.uber-info#uber-info
+            +e.top.text.--xs.--medium.SPAN Name der Region
+            +e.middle 
+              +e.info.text.--xs.--medium.SPAN LUXED Beleuchtungen GmbH
+              +e.info.text.--xs.--medium.SPAN Benzburweg 18A
+              +e.info.text.--xs.--medium.SPAN CH- 4410 Liestal
+            +e.bottom.btn.A(href="#") GET DIRECTION
+

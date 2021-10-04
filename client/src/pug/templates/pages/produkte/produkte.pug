@@ -12,10 +12,11 @@ block content
     -
       const breadcrumbs = ['Home', 'Some page', 'Some page 2'],
             category = 'Produkte',
+            info = [],
             subcategory = ['INDOORS', 'OUTDOORS'],
             image = 'produkts.png'
 
-    +category(breadcrumbs, category, subcategory, image)
+    +category(breadcrumbs, category, info, subcategory, image)
     include ../../sections/products/about-product
     - 
       const productCards = [

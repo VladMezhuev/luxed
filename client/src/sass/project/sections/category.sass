@@ -1,9 +1,9 @@
 .category
   position: relative
-  h: 235px
+  h: auto
   w: 100%
   margin: 0
-  padding: 0
+  pb: 56px
 
   &__
     &bg
@@ -14,3 +14,25 @@
 .category-wrapper
   pt: 22px
   position: relative
+
+.category-info
+  &__
+    &categoty
+      display: flex
+      flex-direction: column
+
+    &info-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      +mq-lg
+        flex-direction: row
+    
+    &info
+      mt: 20px
+      mr: 15px
+      fs: 12px
+
+      &:last-child
+        mr: 0
