@@ -9,7 +9,8 @@ $theme-default: (
     white: #ffffff,
   ),
   primary: (
-    main: #06a1e4,
+    main: #adadad,
+    black: #000000,
     inverse: #0f7baa,
     dark: #098ec7,
     red: #D0011B,
@@ -41,6 +42,8 @@ $theme-base: map-merge($theme-default, (
     5: #161617,
     6: #979797,
     7: #000000,
+    8: #363636,
+    9: #585858,
   )
 ));
 

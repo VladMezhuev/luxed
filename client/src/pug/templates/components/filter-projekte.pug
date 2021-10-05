@@ -1,0 +1,57 @@
+include ../../mixins/index
+
++b.filter-projekte 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.filter-projekte-wrapper 
+      +b.filter-bar 
+        +e.filter-link.is-active(data-filter="*") ALLE
+        +e.filter-link(data-filter=".office") OFFICE
+        +e.filter-link(data-filter=".educational") EDUCATIONAL INSTITUTION
+        +e.filter-link(data-filter=".restaurant") RESTAURANT
+        +e.filter-link(data-filter=".hotel") HOTEL
+      +b.projekte-wrapper#projekte-grid
+        +e.column.office#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte1.png")
+            +e.name.A(href="#") Name des Projekts
+        +e.column.educational#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte2.png")
+            +e.name.A(href="#") Name des Projekts
+        +e.column.restaurant#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte3.png")
+            +e.name.A(href="#") Name des Projekts
+        +e.column.educational#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte4.png")
+            +e.name.A(href="#") Name des Projekts
+        +e.column.restaurant#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte5.png")
+            +e.name.A(href="#") Name des Projekts
+        +e.column.hotel#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte6.png")
+            +e.name.A(href="#") Name des Projekts
+        +e.column.hotel#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte7.png")
+            +e.name.A(href="#") Name des Projekts
+        +e.column.office#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte8.png")
+            +e.name.A(href="#") Name des Projekts
+        +e.column.restaurant#filter-item
+          +b.projekte
+            +e.image-wrapper.A(href="#")
+              +e.image.img.IMG(src="../../../static/img/projekte/projekte9.png")
+            +e.name.A(href="#") Name des Projekts
