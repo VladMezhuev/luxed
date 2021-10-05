@@ -5,4 +5,5 @@ mixin newsCards(cardsData = [])
     each item in cardsData
       +e.image-wrapper.A(href="#")
         +e.image.img.IMG(src="../../../static/img/" + item.image)
+        +e.date.SPAN= item.date
       +e.title.picture-name.A(href="#")= item.name

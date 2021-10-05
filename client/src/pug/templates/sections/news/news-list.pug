@@ -5,39 +5,48 @@ include ../../../mixins/index
   const newsCards = [
     [{
       name: "Nachrichtentitel",
-      image: "news/news1.png"
+      image: "news/news1.png",
+      date: "22.08.2018",
     }],
     [{
       name: "Nachrichtentitel",
-      image: "news/news2.png"
+      image: "news/news2.png",
+      date: "22.08.2018",
     }],
     [{
       name: "Nachrichtentitel",
-      image: "news/news3.png"
+      image: "news/news3.png",
+      date: "22.08.2018",
     }],
     [{
       name: "Nachrichtentitel",
-      image: "news/news4.png"
+      image: "news/news4.png",
+      date: "22.08.2018",
     }],
     [{
       name: "Nachrichtentitel",
-      image: "news/news5.png"
+      image: "news/news5.png",
+      date: "22.08.2018",
     }],
     [{
       name: "Nachrichtentitel",
-      image: "news/news6.png"
+      image: "news/news6.png",
+      date: "22.08.2018",
     }],
     [{
       name: "Nachrichtentitel",
-      image: "news/news7.png"
+      image: "news/news7.png",
+      date: "22.08.2018",
     }],
     [{
       name: "Nachrichtentitel",
-      image: "news/news8.png"
+      image: "news/news8.png",
+      date: "22.08.2018",
     }],
     [{
       name: "Nachrichtentitel",
-      image: "news/news9.png"
+      image: "news/news9.png",
+      date: "22.08.2018",
     }]
   ]
 
@@ -48,3 +57,4 @@ include ../../../mixins/index
         each item in newsCards
           +e.column 
             +newsCards(item)
+    include ../../elements/pagination
