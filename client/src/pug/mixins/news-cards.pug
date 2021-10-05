@@ -1,0 +1,8 @@
+include ./../../../node_modules/bemtopuginvue/bemto.pug
+
+mixin newsCards(cardsData = [])
+  +b.news
+    each item in cardsData
+      +e.image-wrapper.A(href="#")
+        +e.image.img.IMG(src="../../../static/img/" + item.image)
+      +e.title.picture-name.A(href="#")= item.name

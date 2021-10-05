@@ -75,12 +75,30 @@
     &image-wrapper
       w: 100%
       h: 222px
-
-    &name
+      display: block
+      position: relative
+    
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          .projekte
+            &__
+              &hover
+                h: 100%
+                fs: 15px
+    
+    &hover
+      position: absolute
+      top: 0
+      left: 0
+      w: 100%
+      h: 0px
+      display: flex
+      align-items: center
+      justify-content: center
       text-decoration: none
-      color: var(--theme-text-7)
-      font-size: 15px
-      font-weight: 700
-      line-height: 22px
-      mt: 15px
-      
+      text-transform: uppercase
+      color: var(--theme-text-1)
+      bg-color: rgba(0, 0, 0, .3)
+      transition: .5s
+      fs: 0px
+      fw: 700
