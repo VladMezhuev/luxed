@@ -9,6 +9,7 @@ const mainSliderOptions = {
     delay: 5000,
   },
   navigation: false,
+  disableOnInteraction: false,
   breakpoints: {
     1200: {
       navigation: {
@@ -25,4 +26,23 @@ const mainSliderOptions = {
   },
 }
 
+const projektOptions = {
+  speed: 800,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  disableOnInteraction: false,
+  navigation: false,
+  breakpoints: {
+    1200: {
+      navigation: {
+        prevEl: '.projekt-slider-prev',
+        nextEl: '.projekt-slider-next',
+      },
+    },
+  },
+}
+
 const swiper = new Swiper('.slider-bg', mainSliderOptions);
+const projekt = new Swiper('.projekt-slider-bg', projektOptions);

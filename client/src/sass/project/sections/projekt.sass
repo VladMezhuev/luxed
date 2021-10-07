@@ -1,0 +1,110 @@
+.projekt-slider
+  position: relative
+  display: flex
+  align-items: center
+  &__
+    &projekt-slider-wrapper
+      h: 400px
+
+      +mq-lg
+        h: 700px
+
+.projekt-slider-bg
+  position: absolute !important
+  h: 100%
+
+.projekt-content
+  position: relative
+  w: 100%
+
+.projekt-slider-navigation 
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .projekt-control
+    position: relative
+    z-index: 10
+    cursor: pointer
+    display: none
+
+    +mq-xl
+      display: block
+
+.projekt-breadcrumbs
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  h: 60px
+  z-index: 10
+  padding: 25px 0
+  w: 100%
+  background-color: rgba(0, 0, 0, .6)
+
+.projekt-main 
+  mt: -160px
+  position: relative
+  z-index: 10
+  mb: 80px
+
+.projekt-main-wrapper
+  &__
+    &title
+      color: var(--theme-text-1)
+      fs: 50px
+      fw: 300
+      mb: 40px
+
+.projekt-section 
+  color: var(--theme-text-7)
+  display: flex
+  flex-direction: column
+  padding: 10px 5px 30px
+  bg-color: var(--theme-accent-white)
+
+
+  +mq-lg
+    flex-direction: row
+    padding: 30px 15px 70px
+
+
+  &__
+    &section-name
+      display: flex
+      flex-direction: column
+
+      +mq-lg
+        w: 50%
+        padding: 0 20px
+
+ 
+      &--side
+
+        +mq-lg
+          w: 25%
+          padding: 0 15px
+
+    &image-list 
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+    &image-wrapper
+      w: 50px
+      h: 50px
+
+      +mq-sm
+        w: 84px
+        h: 84px
+
+    &title
+      mt: 10px
+      mb: 10px
+      +mq-lg
+        mt: 0px
+        mb: 30px
+
+    &description-text, &item
+      color: #8d8d8d

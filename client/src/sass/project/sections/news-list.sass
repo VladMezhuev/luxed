@@ -12,11 +12,11 @@
       +mq-lg
         margin: 0 -10px
 
+
       +mq-xl
         margin: 0 -15px
 
     &column
-      mb: 40px
       w: 100%
 
       +mq-md
@@ -27,6 +27,7 @@
         w: 33.3%
 
 .news
+  mb: 40px
   &__
     &image-wrapper
       display: block
@@ -34,7 +35,10 @@
       overflow: hidden
       position: relative
       h: 222px
-      w: 369px
+      w: 100%
+
+      +mq-xl
+        w: 369px
 
     &image
       transition: .3s

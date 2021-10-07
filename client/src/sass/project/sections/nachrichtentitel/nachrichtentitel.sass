@@ -1,0 +1,122 @@
+.nachrichtentitel
+  mt: 50px
+
+.nachrichtentitel-wrapper
+
+  &__
+    &row 
+      d: flex
+      
+      flex-direction: column
+
+      +mq-lg
+        flex-direction: row
+        ma: 0 -15px
+
+      +mq-xl
+        ma: 0 -32px
+    
+    &column
+
+      +mq-lg
+        pa: 0 15px
+
+      +mq-xl
+        pa: 0 32px
+      &--
+        &main
+          w: 100%
+
+          +mq-lg
+            w: 65%
+        
+        &side
+          overflow: hidden
+          w: 100%
+
+          +mq-lg
+            w: 35%
+
+.nachrichtentitel-main-content
+  
+  &__
+    &preview-wrapper
+      w: 100%
+      h: 300px
+
+      +mq-lg
+        h: 441px
+
+    &text-wrapper
+      position: relative
+      mt: 50px
+
+      &--
+        &pad
+          pl: 60px
+
+        &line
+          .nachrichtentitel-main-content
+            &__
+              &text
+                &::before
+                  content: ""
+                  position: absolute
+                  w: 4px
+                  h: 100%
+                  bg-color: black
+                  ml: -60px
+        &square
+          .nachrichtentitel-main-content
+            &__
+              &text
+                &::before
+                  content: ""
+                  position: absolute
+                  w: 8px
+                  h: 8px
+                  bg-color: black
+                  ml: -60px
+                  mt: 7px
+        &number
+          .nachrichtentitel-main-content
+            &__
+              &text
+                &::before
+                  content: ""
+                  position: absolute
+                  color: black
+                  ml: -60px
+                  fw: 700
+                  fs: 15px
+
+                &--
+                  &one
+                    &::before
+                      content: '1'
+                  &two
+                    &::before
+                      content: '2'
+                  &three
+                    &::before
+                      content: '3'
+
+    
+    &main-title
+      fs: 25px
+      fw: 500
+      color: var(--theme-text-7)
+    
+    &sub-title
+      fs: 18px
+      fw: 500
+      color: var(--theme-text-7)
+
+    &text
+      mt: 15px
+      color: #727272
+    
+    &read-more
+      text-decoration: none
+      color: #585858
+      fw: 700

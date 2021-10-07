@@ -8,12 +8,31 @@ const iso = new Isotope(elem, {
   layoutMode: 'fitRows',
 });
 
-const fiterItem = document.querySelectorAll('.filter-bar__filter-link')
+const fiterItem = Array.from(document.getElementsByClassName('filter-bar__filter-link'))
 
 fiterItem.forEach(el => {
   el.addEventListener('click', e => {
     const { filter } = e.currentTarget.dataset;
     iso.arrange({ filter: `${filter}` })
+
+    fiterItem.forEach(item => {
+      item !== e.target ? item.classList.remove('is-active') : item.classList.add('is-active')
+    })
+  })
+})
+
+const fachpartnerGrid = document.getElementById('fachpartner-grid')
+const qwe = new Isotope(fachpartnerGrid, {
+  itemSelector: '#filter-item',
+  layoutMode: 'fitRows',
+});
+
+const fiterItems = Array.from(document.getElementsByClassName('filter-control-bar-wrapper__filter-control'))
+
+fiterItems.forEach(el => {
+  el.addEventListener('click', e => {
+    const { filter } = e.currentTarget.dataset;
+    qwe.arrange({ filter: `${filter}` })
 
     fiterItem.forEach(item => {
       item !== e.target ? item.classList.remove('is-active') : item.classList.add('is-active')

@@ -1,5 +1,5 @@
 import 'menu'
 import 'slider'
 import 'form-validate'
-import 'map'
 import 'filter'
+import 'map'
