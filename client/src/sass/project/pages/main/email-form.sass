@@ -100,6 +100,12 @@
 
 div
   &.error
-    position: absolute
-    bottom: -20px
-    color: red
+    display: none
+
+input
+  &.error
+    border-bottom: 2px solid red
+    background-color: var(--theme-accent-white)
+    background-image: url(../img/form-error.svg)
+    background-repeat: no-repeat
+    background-position: 95% center

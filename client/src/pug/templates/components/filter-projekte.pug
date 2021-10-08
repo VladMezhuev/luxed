@@ -63,11 +63,18 @@ include ../../mixins/index
   +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
     +b.filter-projekte-wrapper 
       +b.filter-bar 
-        +e.filter-link.is-active(data-filter="*") ALLE
-        +e.filter-link(data-filter=".office") OFFICE
-        +e.filter-link(data-filter=".educational") EDUCATIONAL INSTITUTION
-        +e.filter-link(data-filter=".restaurant") RESTAURANT
-        +e.filter-link(data-filter=".hotel") HOTEL
+        +e.list.UL
+          +e.item.LI
+            +e.filter-link.is-active(data-filter="*") ALLE
+          +e.item.LI
+            +e.filter-link(data-filter=".office") OFFICE
+          +e.item.LI
+            +e.filter-link(data-filter=".educational") EDUCATIONAL INSTITUTION
+          +e.item.LI
+            +e.filter-link(data-filter=".restaurant") RESTAURANT
+          +e.item.LI
+            +e.filter-link(data-filter=".hotel") HOTEL
+
       +b.projekte-wrapper#projekte-grid
         each card in filterCards
           +filterCard(card)

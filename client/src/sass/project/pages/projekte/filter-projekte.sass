@@ -15,21 +15,34 @@
     padding: 0 30px
 
   &__
+    &list
+      w: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+    
+    &item
+      padding: 5px
+      mr: 15px
+
+      +mq-md
+        mr: 30px
+
+
     &filter-link
-      text-decoration: none
       font-size: 12px
       font-weight: 300
       line-height: 22px
       text-transform: uppercase 
       color: var(--theme-text-7)
-      mr: 15px
       transition: .3s
       position: relative
       cursor: pointer
 
       +mq-md
         fs: 15px
-        mr: 30px
+        
 
       &.is-active
         fw: 700    

@@ -107,6 +107,7 @@
       h: 18px
       filter: brightness(0)
       transition: .3s
+      position: relative
 
       +mq-lg
         filter: brightness(10)
@@ -176,3 +177,45 @@
         
       &--bottom
         bottom: 0
+
+.haeder-search
+  position: relative
+  bg-color: transparent
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  pa: 10px
+  w: 300px
+
+  +mq-lg
+    w: 400px
+
+  &__
+    &block
+      position: relative
+      align-self: flex-end
+
+    &none
+      position: absolute
+      display: flex
+      align-items: center
+      top: 50%
+      right: 1px
+      transform: translateY(-50%)
+      // display: none
+      w: 90%
+    
+    &input
+      w: 100%
+      outline: none
+      border: 1px solid black
+    
+    &button
+      w: 30px
+      display: flex
+      align-items: center
+      justify-content: center
+      background: none
+      outline: none
+      border: none
+      cursor: pointer

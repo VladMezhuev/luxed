@@ -1,30 +1,32 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-new */
 
+const infowindow = document.getElementsByClassName('info-window')
+
 const maps = [
   {
     el: 'fachpartner-map',
     center: [47.4752108, 7.7419468],
     markers: [
-      [47.4746108, 7.7419468],
-      [47.4750108, 7.7430468],
-      [47.4753108, 7.7425468],
+      [{ lat: 47.4746108, lng: 7.7419468 }, infowindow[0]],
+      [{ lat: 47.4750108, lng: 7.7430468 }, infowindow[1]],
+      [{ lat: 47.4753108, lng: 7.7425468 }, infowindow[2]],
     ],
   },
   {
     el: 'agenten-map',
     center: [47.4752108, 7.7419468],
     markers: [
-      [47.4746108, 7.7419468],
-      [47.4750108, 7.7430468],
-      [47.4753108, 7.7425468],
+      [{ lat: 47.4746108, lng: 7.7419468 }, infowindow[0]],
+      [{ lat: 47.4750108, lng: 7.7430468 }, infowindow[1]],
+      [{ lat: 47.4753108, lng: 7.7425468 }, infowindow[2]],
     ],
   },
   {
     el: 'uber-map',
     center: [47.4752108, 7.7419468],
     markers: [
-      [47.4746108, 7.7419468],
+      [{ lat: 47.4746108, lng: 7.7419468 }, infowindow[0]],
     ],
   },
 ]
@@ -37,11 +39,20 @@ function initMap({ el, center, markers }) {
       center: new google.maps.LatLng(...center),
       zoom: 18,
     });
-    markers.forEach(([lat, lng]) => {
-      new google.maps.Marker({
-        position: { lat, lng },
+    markers.forEach(([position, info]) => {
+      const marker = new google.maps.Marker({
+        position,
         map,
-        icon: '../../../static/icons/location-map.png',
+        optimized: false,
+      });
+      const infoWindow = new google.maps.InfoWindow({
+        content: info,
+      });
+      marker.addListener('click', () => {
+        info.classList.remove('is-active');
+        info.classList.add('is-active');
+        infoWindow.close();
+        infoWindow.open(marker.getMap(), marker);
       });
     });
   }

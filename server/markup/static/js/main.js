@@ -14287,18 +14287,40 @@ var _construct2 = _interopRequireDefault(__webpack_require__(13));
 
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(8));
 
+var infowindow = document.getElementsByClassName('info-window');
 var maps = [{
   el: 'fachpartner-map',
   center: [47.4752108, 7.7419468],
-  markers: [[47.4746108, 7.7419468], [47.4750108, 7.7430468], [47.4753108, 7.7425468]]
+  markers: [[{
+    lat: 47.4746108,
+    lng: 7.7419468
+  }, infowindow[0]], [{
+    lat: 47.4750108,
+    lng: 7.7430468
+  }, infowindow[1]], [{
+    lat: 47.4753108,
+    lng: 7.7425468
+  }, infowindow[2]]]
 }, {
   el: 'agenten-map',
   center: [47.4752108, 7.7419468],
-  markers: [[47.4746108, 7.7419468], [47.4750108, 7.7430468], [47.4753108, 7.7425468]]
+  markers: [[{
+    lat: 47.4746108,
+    lng: 7.7419468
+  }, infowindow[0]], [{
+    lat: 47.4750108,
+    lng: 7.7430468
+  }, infowindow[1]], [{
+    lat: 47.4753108,
+    lng: 7.7425468
+  }, infowindow[2]]]
 }, {
   el: 'uber-map',
   center: [47.4752108, 7.7419468],
-  markers: [[47.4746108, 7.7419468]]
+  markers: [[{
+    lat: 47.4746108,
+    lng: 7.7419468
+  }, infowindow[0]]]
 }];
 
 function initMap(_ref) {
@@ -14314,16 +14336,22 @@ function initMap(_ref) {
     });
     markers.forEach(function (_ref2) {
       var _ref3 = (0, _slicedToArray2["default"])(_ref2, 2),
-          lat = _ref3[0],
-          lng = _ref3[1];
+          position = _ref3[0],
+          info = _ref3[1];
 
-      new google.maps.Marker({
-        position: {
-          lat: lat,
-          lng: lng
-        },
+      var marker = new google.maps.Marker({
+        position: position,
         map: map,
-        icon: '../../../static/icons/location-map.png'
+        optimized: false
+      });
+      var infoWindow = new google.maps.InfoWindow({
+        content: info
+      });
+      marker.addListener('click', function () {
+        info.classList.remove('is-active');
+        info.classList.add('is-active');
+        infoWindow.close();
+        infoWindow.open(marker.getMap(), marker);
       });
     });
   }

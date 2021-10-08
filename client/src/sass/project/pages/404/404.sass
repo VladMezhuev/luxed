@@ -1,0 +1,93 @@
+.error-404
+  position: relative
+  h: calc( 100vh - 72px )
+  w: 100%
+  display: flex
+  align-items: center
+
+  +mq-lg
+    h: 828px
+  &__
+    &bg-wrapper  
+      position: absolute
+      top: 0
+      left: 0
+      w: 100%
+      h: 100%
+
+  .g-container
+    position: relative
+    display: flex
+    align-items: center
+    w: 100%
+
+    +mq-lg
+      justify-content: flex-end
+
+
+.oops-info 
+  color: var(--theme-text-1)
+  display: flex
+  flex-direction: column
+  align-self: flex-end
+  &__
+    &title
+      fs: 30px
+      fw: 300
+      text-align: center
+
+      +mq-lg
+        text-align: left
+        fs: 50px
+
+    &subtitle
+      fs: 20px
+      fw: 300
+      mt: 15px
+      text-align: center
+
+      +mq-lg
+        text-align: left
+        fs: 20px
+    
+    &search-form-wrapper 
+      mt: 28px
+
+.form-404
+  display: flex
+  align-items: center
+
+
+  &__
+    &input
+      w: 200px
+      h: 57px
+      outline: none
+      border: none
+      pa: 22px
+      font-size: 15px
+      font-weight: 400
+      color: #595959
+
+      +mq-sm
+        w: 300px
+
+      +mq-md
+        w: 350px
+
+      +mq-lg
+        w: 450px
+
+      +mq-xl
+        w: 525px
+    
+    &btn
+      w: 100px
+      h: 57px
+      justify-content: center
+
+      +mq-sm
+        w: 150px
+
+      +mq-xl
+        w: 200px
