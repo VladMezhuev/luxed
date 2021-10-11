@@ -1,18 +1,18 @@
 .about-product-card 
   z-index: 2
-  position: relative
-  display: flex
-  align-items: flex-start
+  pos: relative
+  d: flex
+  ai: flex-start
   flex-direction: column
   w: 100%
-  padding: 10px 0
+  pa: 10px 0
   bg-color: var(--theme-accent-white)
   overflow: hidden
 
   +mq-lg
     flex-direction: row
-    justify-content: space-between
-    padding: 68px 0 41px
+    jc: space-between
+    pa: 68px 0 41px
 
 
   &__
@@ -29,10 +29,10 @@
 
           +mq-lg
             w: 50%
-            padding: 0 20px
+            pa: 0 20px
 
         &left
-          text-align: center
+          ta: center
         
         &right
 
@@ -40,20 +40,20 @@
             pl: 60px
     &text
       color: var(--theme-text-3)
-      text-align: center
+      ta: center
 
       +mq-lg
         mt: 0px
-        text-align: left
+        ta: left
 
     &title
       color: var(--theme-text-7)
       fs: $type-font-size-lg
-      text-align: center
+      ta: center
       mb: 10px
       mt: 15px
 
       +mq-lg
         mb: 25px
         mt: 0px
-        text-align: left
+        ta: left

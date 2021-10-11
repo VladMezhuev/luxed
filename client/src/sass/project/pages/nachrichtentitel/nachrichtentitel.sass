@@ -11,10 +11,7 @@
 
       +mq-lg
         flex-direction: row
-        ma: 0 -15px
-
-      +mq-xl
-        ma: 0 -32px
+        ma: 0 -5px
     
     &column
 
@@ -48,7 +45,7 @@
         h: 441px
 
     &text-wrapper
-      position: relative
+      pos: relative
       mt: 50px
 
       &--
@@ -61,10 +58,10 @@
               &text
                 &::before
                   content: ""
-                  position: absolute
+                  pos: absolute
                   w: 4px
                   h: 100%
-                  bg-color: black
+                  bg-color: var(--theme-primary-black)
                   ml: -60px
         &square
           .nachrichtentitel-main-content
@@ -72,10 +69,10 @@
               &text
                 &::before
                   content: ""
-                  position: absolute
+                  pos: absolute
                   w: 8px
                   h: 8px
-                  bg-color: black
+                  bg-color: var(--theme-primary-black)
                   ml: -60px
                   mt: 7px
         &number
@@ -84,8 +81,8 @@
               &text
                 &::before
                   content: ""
-                  position: absolute
-                  color: black
+                  pos: absolute
+                  color: var(--theme-text-7)
                   ml: -60px
                   fw: 700
                   fs: 15px
@@ -114,9 +111,9 @@
 
     &text
       mt: 15px
-      color: #727272
+      color: var(--theme-text-11)
     
     &read-more
-      text-decoration: none
-      color: #585858
+      td: none
+      color: var(--theme-text-9)
       fw: 700

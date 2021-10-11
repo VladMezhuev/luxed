@@ -37,9 +37,12 @@ include ../../mixins/index
             +e.item.LI
               +e.link.A(href="../fachpartner/fachpartner.html") Fachpartner
         +e.social-links 
-          +e.search.IMG(src="../../../static/icons/search.svg")
+          +e.search.js-search.IMG(src="../../../static/icons/search.svg")
           +e.social-link.social-link.A(href="#")
             +e.search-image.img.IMG(src="../../../static/icons/facebook.svg")
           +e.social-link.social-link.A(href="#")
             +e.search-image.img.IMG(src="../../../static/icons/ints.svg")
-    
+      +b.header-search.FORM(action='../search/search.html')
+        +e.input.js-input.INPUT(type='search' placeholder='Search')
+        +e.button.icon.BUTTON(type="submit")
+          +e.search.js-button.IMG(src="../../../static/icons/search.svg")

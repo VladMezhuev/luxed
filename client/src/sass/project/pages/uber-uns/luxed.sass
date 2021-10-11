@@ -1,30 +1,30 @@
 .luxed
-  background-color: var(--theme-accent-main)
+  bg-color: var(--theme-accent-main)
 
 .luxed-wrapper
-  background-color: var(--theme-accent-white)
+  bg-color: var(--theme-accent-white)
   color: var(--theme-text-3)
-  position: relative
-  padding: 20px 5px
+  pos: relative
+  pa: 20px 5px
 
   +mq-lg
-    padding: 50px 20px
+    pa: 50px 20px
   
   +mq-xl
-    padding: 75px 45px
+    pa: 75px 45px
 
   &__
     &bg-image
-      position: absolute
+      pos: absolute
       top: 50%
       left: 50%
-      transform: translate(-50%, -50%)
+      trans: translate(-50%, -50%)
       z-index: 1
 
     &top, &middle, &bottom
-      position: relative
-      display: flex
-      align-items: center
+      pos: relative
+      d: flex
+      ai: center
       z-index: 2
       flex-direction: column
 
@@ -34,23 +34,23 @@
 
     &top, &bottom
       +mq-lg
-        justify-content: space-between
+        jc: space-between
 
     &top
       +mq-lg
-        align-items: flex-start
+        ai: flex-start
 
     &bottom
       +mq-lg
-        align-items: flex-end
+        ai: flex-end
         mt: 20px
     
     &middle
       +mq-lg
-        justify-content: center
+        jc: center
 
     &image-wrapper
-      margin: 10px 0px
+      ma: 10px 0px
       
       &--
         &l
@@ -75,15 +75,15 @@
           mb: 0px
     
     &element-wrapper
-      display: flex
+      d: flex
       flex-direction: column-reverse
 
       +mq-md
         flex-direction: row-reverse
-        align-items: center
+        ai: center
 
         +mq-lg
-          align-items: flex-start
+          ai: flex-start
 
       &--
         &l, &e
@@ -98,12 +98,12 @@
 
           +mq-lg
             flex-direction: column-reverse
-            align-items: center
+            ai: center
 
         &e, &d
 
           +mq-lg
-            align-items: flex-end
+            ai: flex-end
         
     &text-part
       w: 100%
@@ -119,29 +119,29 @@
 
           +mq-lg
             w: 425px
-            text-align: center
+            ta: center
             mt: 10px
 
         &l, &e
 
           +mq-lg
-            text-align: right
+            ta: right
             mr: 40px
         
         &u, &d
 
           +mq-lg
-            text-align: left
+            ta: left
             ml: 40px
 
     &letter-wrapper
-      display: flex
+      d: flex
       flex-direction: column
-      align-items: flex-start
+      ai: flex-start
       w: 15%
 
       +mq-lg
-        text-align: center
+        ta: center
       &--
         &l, &u, &x
 
@@ -156,9 +156,9 @@
         &x
 
           +mq-lg
-            align-items: center
+            ai: center
     
     &name
-      font-size: 20px
-      font-weight: 500
+      fs: 20px
+      fw: 500
       color: var(--theme-text-8)

@@ -1,13 +1,13 @@
 .category-info
-  display: flex
-  align-items: center
+  d: flex
+  ai: center
   mt: 55px
   flex-direction: column
   z-index: 1
 
   +mq-lg
     flex-direction: row
-    justify-content: space-between
+    jc: space-between
 
 
   &__
@@ -19,22 +19,22 @@
         fs: 50px
     
     &subcategory-wrapper
-      display: flex
-      align-items: center
+      d: flex
+      ai: center
       flex-direction: column
 
       +mq-lg
         flex-direction: row
     
     &subcategory
-      text-decoration: none
+      td: none
       fs: 25px
-      text-transform: uppercase
+      ft: uppercase
       fw: 300
       color: var(--theme-text-1)
       ml: 0px
-      position: relative
-      transition: .3s
+      pos: relative
+      tr: .3s
 
       +mq-lg
         ml: 30px
@@ -44,7 +44,7 @@
 
         &::before
           content: ""
-          position: absolute
+          pos: absolute
           left: 0
           bottom: -10px
           w: 100%
@@ -57,7 +57,7 @@
 
           &::before
             content: ""
-            position: absolute
+            pos: absolute
             left: 0
             bottom: -10px
             w: 100%

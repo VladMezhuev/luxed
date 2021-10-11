@@ -1,35 +1,35 @@
 .uber-map 
   bg-color: var(--theme-accent-white)
-  padding: 20px 0
+  pa: 20px 0
   color: var(--theme-text-3)
 
   +mq-lg
-    padding: 56px 0 66px
+    pa: 56px 0 66px
 .uber-map-wrapper 
 
   &__
     &top
-      display: flex
-      align-items: center
+      d: flex
+      ai: center
       flex-direction: column
       mb: 20px
 
       +mq-lg
         flex-direction: row
-        justify-content: space-between
+        jc: space-between
         mb: 50px
 
     &subtitle
-      font-size: 15px
+      fs: 15px
       color: var(--theme-text-7)
       line-height: 22px
-      font-weight: 300
+      fw: 300
 
     &span
       fw: 700
 
     &adress-category
-      display: flex
+      d: flex
       mb: 10px
 
       +mq-lg
@@ -41,7 +41,7 @@
       mr: 50px
 
     &image
-      display: block
+      d: block
       w: 100%
       h: 100%
 
@@ -52,17 +52,17 @@
         mb: 30px
     
     &bottom
-      display: flex
+      d: flex
       flex-direction: column-reverse
 
       +mq-lg
         flex-direction: row
-        justify-content: space-between      
+        jc: space-between      
     
     &column-map
       w: 100%
       h: 488px
-      position: relative
+      pos: relative
 
       +mq-lg
         w: 70%
@@ -77,11 +77,11 @@
         mt: 0px
     
     &text
-      text-decoration: none
+      td: none
       color: inherit
 
     &location-info
-      display: flex
+      d: flex
       flex-direction: column
 
 .uber-map-container
@@ -93,33 +93,33 @@
   w: 150px
   h: 180px
   flex-direction: column
-  align-items: center
-  display: none
+  ai: center
+  d: none
   color: #8d8d8d
   bg-color: var(--theme-accent-white)
 
   +mq-lg
     w: 256px
     h: 229px
-    padding: 27px 25px
+    pa: 27px 25px
 
 
   &.is-active
-    display: flex
+    d: flex
 
   &__
     &top
       mb: 15px
-      text-align: center
+      ta: center
 
     &middle
-      display: flex
+      d: flex
       flex-direction: column
-      align-items: center
-      text-align: center
+      ai: center
+      ta: center
     
     &bottom
       w: 100%
       h: 57px
-      justify-content: center
+      jc: center
       mt: 28px

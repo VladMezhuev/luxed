@@ -1,14 +1,14 @@
 .review-card
-  display: flex
+  d: flex
   flex-direction: column
   br-bottom: 1px solid#d7d7d7
-  justify-content: space-between
+  jc: space-between
   bg-color: var(--theme-accent-white)
-  padding: 10px 10px 15px 10px
+  pa: 10px 10px 15px 10px
 
   +mq-lg
     flex-direction: row
-    padding: 30px 60px 35px 30px
+    pa: 30px 60px 35px 30px
 
 
   &:last-child
@@ -28,13 +28,13 @@
       h: 66px
 
     &review-text
-      color: #8d8d8d
-      display: flex
+      color: var(--theme-text-3)
+      d: flex
       flex-direction: column
-      align-items: center
+      ai: center
 
       +mq-lg
-        align-items: flex-start
+        ai: flex-start
 
     &persone-name
       color: var(--theme-text-7)
@@ -43,8 +43,8 @@
 
     &review
       mt: 20px
-      text-align: center
+      ta: center
 
       +mq-lg
-        text-align: left
+        ta: left
       

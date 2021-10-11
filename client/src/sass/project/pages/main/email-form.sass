@@ -1,7 +1,7 @@
 .email-form
   w: 100%
-  position: relative
-  padding: 20px 0
+  pos: relative
+  pa: 20px 0
 
   &__
     &bg
@@ -11,32 +11,35 @@
       right: 0
 
 .email-form-wrapper
-  position: relative
+  pos: relative
   br: 1px solid rgba(255, 255, 255, .25)
-  padding: 40px 15px
+  pa: 40px 15px
   h: 300px
 
   +mq-lg
     h: auto
     pa: 90px 35px
+  
+  +mq-xl
+    w: 1100px
 
   &__    
     &text
-      text-transform: uppercase
+      ft: uppercase
       white-space: nowrap
       fs: 20px
 
       +mq-xl
         fs: 25px
         w: 35%
-        margin: 0
-        padding: 0
+        ma: 0
+        pa: 0
 
 .form-wrapper
   d: flex
-  align-items: center
+  ai: center
   flex-wrap: wrap
-  position: relative
+  pos: relative
   w: 100%
   h: 60px
   mt: 20px
@@ -45,15 +48,15 @@
   +mq-xl
     pos: absolute
     top: 50%
-    transform: translateY(-50%)
+    trans: translateY(-50%)
     mt: 0px
     right: -50px
     w: 660px
 
   &::before
-    display: none
+    d: none
     content: ""
-    position: absolute
+    pos: absolute
     top: 50%
     left: -50px
     w: 71px
@@ -62,17 +65,17 @@
     z-index: 1
 
     +mq-xl
-      display: block
+      d: block
   
   
   
   &__
     &input
-      border: 0
+      br: 0
       outline: none
       w: 100%
       h: 100%
-      padding: 20px 25px
+      pa: 20px 25px
 
       z-index: 2
 
@@ -82,30 +85,30 @@
     &submit
       h: 100%
       w: 100%
-      display: flex
-      border: none
+      d: flex
+      br: none
       outline: none
-      padding: 0px 26px
+      pa: 0px 26px
       cursor: pointer
       mt: 20px
 
       +mq-lg
-        padding: 20px 25px
+        pa: 20px 25px
         w: 25%
         mt: 0px
 
     &image
-      transform: rotate(90deg)
+      trans: rotate(90deg)
 
 
 div
   &.error
-    display: none
+    d: none
 
 input
   &.error
-    border-bottom: 2px solid red
-    background-color: var(--theme-accent-white)
-    background-image: url(../img/form-error.svg)
-    background-repeat: no-repeat
-    background-position: 95% center
+    br-bottom: 2px solid red
+    bg-color: var(--theme-accent-white)
+    bg-image: url(../img/form-error.svg)
+    bg-repeat: no-repeat
+    bg-position: 95% center

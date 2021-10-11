@@ -1,11 +1,11 @@
 .header-block
   br-bottom: 1px solid rgba(246, 247, 249, .1)
-  padding: 0 10px
+  pa: 0 10px
   z-index: 111
 
   &--
     &white
-      position: relative
+      pos: relative
       bg-color: var(--theme-accent-white)
 
       .header
@@ -23,7 +23,7 @@
             color: black
 
     &trans
-      position: fixed
+      pos: fixed
       top: 0
       right: 0
       left: 0
@@ -69,7 +69,7 @@
 
     &body
       pt: 50px
-      position: absolute
+      pos: absolute
       w: 100%
       left: -100%
       top: 72px
@@ -95,9 +95,9 @@
       color: var(--theme-text-2)
 
     &social-links
-      display: flex
-      align-items: center
-      justify-content: space-between
+      d: flex
+      ai: center
+      jc: space-between
 
 
     &search
@@ -106,8 +106,7 @@
       w: 19px
       h: 18px
       filter: brightness(0)
-      transition: .3s
-      position: relative
+      tr: .3s
 
       +mq-lg
         filter: brightness(10)
@@ -117,33 +116,33 @@
       
       @media (hover: hover) and (pointer: fine)
         &:hover
-          transform: scale(1.2)
+          trans: scale(1.2)
 
     &social-link
       ml: 12px
-      display: none
-      transition: .3s
+      d: none
+      tr: .3s
 
       +mq-lg
-        display: block
+        d: block
 
       &:first-child
         ml: 0px
 
       @media (hover: hover) and (pointer: fine)
         &:hover
-          transform: scale(1.2)
+          trans: scale(1.2)
 
 .menu-icon
-  position: relative
-  display: block
+  pos: relative
+  d: block
   w: 20px
   h: 20px
   order: 1
   
 
   +mq-lg
-    display: none
+    d: none
 
   &.is-active
     .menu-icon
@@ -152,22 +151,22 @@
           trans: scale(0)
 
           &--top
-            transform: rotate(-45deg)
+            trans: rotate(-45deg)
             top: 9px
           
           &--bottom
-            transform: rotate(45deg)
+            trans: rotate(45deg)
             bottom: 8px
 
 
   &__
     &line
-      position: absolute
+      pos: absolute
       w: 100%
       h: 3px
       bg-color: var(--theme-primary-black)
       left: 0
-      transition: .3s
+      tr: .3s
 
       &--top
         top: 0
@@ -178,44 +177,39 @@
       &--bottom
         bottom: 0
 
-.haeder-search
-  position: relative
-  bg-color: transparent
-  display: flex
-  align-items: center
-  justify-content: flex-end
-  pa: 10px
-  w: 300px
+.header-search
+  pos: absolute
+  left: 0
+  top: 72px
+  w: 100%
+  h: 60px
+  pa: 15px
+  d: none
+  ai: center
+  jc: space-between
 
   +mq-lg
-    w: 400px
+    top: 106px
+
+  &.is-active
+    d: flex
+
 
   &__
-    &block
-      position: relative
-      align-self: flex-end
-
-    &none
-      position: absolute
-      display: flex
-      align-items: center
-      top: 50%
-      right: 1px
-      transform: translateY(-50%)
-      // display: none
-      w: 90%
-    
     &input
       w: 100%
+      h: 30px
+      br: none
       outline: none
-      border: 1px solid black
+      fs: 15px
+      fw: 300
+      pa: 10px
     
     &button
       w: 30px
-      display: flex
-      align-items: center
-      justify-content: center
-      background: none
+      h: 30px
+      ml: 15px
+      bg: transparent
+      br: none
       outline: none
-      border: none
       cursor: pointer

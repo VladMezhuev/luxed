@@ -1469,6 +1469,18 @@ iconMenu.addEventListener('click', function () {
   menu.classList.toggle('is-active');
   iconMenu.classList.toggle('is-active');
 });
+var searchBtn = document.getElementsByClassName('js-search')[0];
+var headerSearch = document.getElementsByClassName('header-search')[0];
+var input = document.getElementsByClassName('js-input')[0];
+var jsButton = document.getElementsByClassName('js-button')[0];
+searchBtn.addEventListener('click', function () {
+  headerSearch.classList.toggle('is-active');
+});
+window.addEventListener('click', function (e) {
+  if (e.target !== input && e.target !== searchBtn && e.target !== jsButton) {
+    headerSearch.classList.remove('is-active');
+  }
+});
 
 /***/ }),
 /* 24 */

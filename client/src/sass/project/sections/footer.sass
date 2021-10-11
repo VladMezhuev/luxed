@@ -1,5 +1,5 @@
 .footer
-  padding: 35px 0
+  pa: 35px 0
   bg-color: var(--theme-accent-dark)
 
 .footer-wrapper
@@ -7,12 +7,12 @@
     &top
       d: flex
       flex-direction: column
-      align-items: center
+      ai: center
       mb: 50px
 
       +mq-lg
         flex-direction: row
-        justify-content: space-between
+        jc: space-between
         mb: 70px
 
     &logo-wrapper 
@@ -21,22 +21,22 @@
 
 .footer-links
   d: flex
-  align-items: center
+  ai: center
   flex-direction: column
 
   +mq-lg
     flex-direction: row
-    justify-content: space-between
+    jc: space-between
 
 .footer-links-wrapper
   d: flex
-  align-items: center
+  ai: center
   flex-direction: column
   mt: 40px
 
   +mq-lg
     flex-direction: row
-    justify-content: space-between
+    jc: space-between
     ml: 30px
     mt: 0px
 
@@ -50,8 +50,8 @@
   &__
     &list
       d: flex
-      align-items: center
-      justify-content: space-between
+      ai: center
+      jc: space-between
       mt: 20px
 
       +mq-lg
@@ -70,26 +70,26 @@
 
     &link
       ml: 9px
-      text-decoration: none
+      td: none
       color: var(--theme-text-1)
       fs: $type-font-size-xs
-      transition: .3s
+      tr: .3s
 
       @media (hover: hover) and (pointer: fine)
         &:hover
           color: var(--theme-text-2)
       
 .footer-menu
-  display: flex
-  align-items: center
+  d: flex
+  ai: center
   flex-direction: column
 
   +mq-lg
     flex-direction: row
   &__
     &list
-      display: flex
-      align-items: center
+      d: flex
+      ai: center
       flex-direction: column
       
       +mq-lg
@@ -104,25 +104,25 @@
         mt: 0px
 
     &link
-      text-decoration: none
+      td: none
       color: var(--theme-text-2)
-      transition: .3s
+      tr: .3s
 
       @media (hover: hover) and (pointer: fine)
         &:hover
           color: var(--theme-text-1)
 
     &angepast
-      text-decoration: none
-      display: block
+      td: none
+      d: block
       color: var(--theme-text-1)
       mt: 45px
-      transition: .3s
+      tr: .3s
 
       @media (hover: hover) and (pointer: fine)
         &:hover
           color: var(--theme-text-2)
 
       +mq-lg
-        display: none
+        d: none
         
