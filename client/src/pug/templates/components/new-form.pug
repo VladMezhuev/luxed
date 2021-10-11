@@ -3,6 +3,7 @@ include ../../mixins/index
 +b.new-form.js-form.FORM(
   data-method='POST',
   data-action='https://httpbin.org/post'
+  novalidate
 )
   +e.top 
     +e.column
@@ -11,7 +12,7 @@ include ../../mixins/index
         placeholder='E-Mail'
         name="new-email"
         id="new-email"
-        data-rule="required"
+        data-rule="required|email"
       )
     +e.column
       +e.input.INPUT(

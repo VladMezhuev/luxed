@@ -245,9 +245,9 @@
                                         </h2>
                                         <p class="new-form-wrapper__info text text--xs text--medium">Deine E-Mail-Adresse wird nicht veröffentlicht. Erforderliche Felder sind mit * markiert.
                                         </p>
-                                        <form class="new-form js-form" data-method="POST" data-action="https://httpbin.org/post">
+                                        <form class="new-form js-form" data-method="POST" data-action="https://httpbin.org/post" novalidate>
                                           <div class="new-form__top"> 
-                                            <div class="new-form__column"><input class="new-form__input" type="email" placeholder="E-Mail" name="new-email" id="new-email" data-rule="required"/>
+                                            <div class="new-form__column"><input class="new-form__input" type="email" placeholder="E-Mail" name="new-email" id="new-email" data-rule="required|email"/>
                                             </div>
                                             <div class="new-form__column"><input class="new-form__input" type="text" placeholder="Name" name="new-name" id="new-name" data-rule="required"/>
                                             </div>

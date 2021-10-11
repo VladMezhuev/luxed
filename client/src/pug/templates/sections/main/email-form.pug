@@ -8,12 +8,13 @@ include ../../../mixins/index
       +b.form-wrapper.js-form.FORM(
         data-method='POST', 
         data-action='https://httpbin.org/post'
+        novalidate
       )
         +e.input.INPUT(
           type="email" 
           id="email-form" 
           name="email-form"
-          data-rule="required"
+          data-rule="required|email"
         )
         +e.submit.btn.BUTTON(
           type="submit"
