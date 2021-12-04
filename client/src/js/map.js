@@ -5,28 +5,10 @@ const infowindow = document.getElementsByClassName('info-window')
 
 const maps = [
   {
-    el: 'fachpartner-map',
-    center: [47.4752108, 7.7419468],
-    markers: [
-      [{ lat: 47.4746108, lng: 7.7419468 }, infowindow[0]],
-      [{ lat: 47.4750108, lng: 7.7430468 }, infowindow[1]],
-      [{ lat: 47.4753108, lng: 7.7425468 }, infowindow[2]],
-    ],
-  },
-  {
-    el: 'agenten-map',
-    center: [47.4752108, 7.7419468],
-    markers: [
-      [{ lat: 47.4746108, lng: 7.7419468 }, infowindow[0]],
-      [{ lat: 47.4750108, lng: 7.7430468 }, infowindow[1]],
-      [{ lat: 47.4753108, lng: 7.7425468 }, infowindow[2]],
-    ],
-  },
-  {
     el: 'uber-map',
-    center: [47.4752108, 7.7419468],
+    center: [46.75430758, 36.7842595],
     markers: [
-      [{ lat: 47.4746108, lng: 7.7419468 }, infowindow[0]],
+      [{ lat: 46.7543075, lng: 36.7844595 }, infowindow[0]],
     ],
   },
 ]

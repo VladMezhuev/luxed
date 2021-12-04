@@ -4,55 +4,55 @@ include ../../mixins/index
 -
   const filterCards = [
     [{
-      name: "Name des Projekts",
+      name: "Проект №1",
       image: "projekte/projekte1.png",
       class: "office",
       link: "../projekt/projekt.html"
     }],
     [{
-      name: "Name des Projekts",
+      name: "Проект №2",
       image: "projekte/projekte2.png",
       class: "educational",
       link: "../projekt/projekt.html"
     }],
     [{
-      name: "Name des Projekts",
+      name: "Проект №3",
       image: "projekte/projekte3.png",
       class: "office",
       link: "../projekt/projekt.html"
     }],
     [{
-      name: "Name des Projekts",
+      name: "Проект №4",
       image: "projekte/projekte4.png",
       class: "hotel",
       link: "../projekt/projekt.html"
     }],
     [{
-      name: "Name des Projekts",
+      name: "Проект №5",
       image: "projekte/projekte5.png",
       class: "educational",
       link: "../projekt/projekt.html"
     }],
     [{
-      name: "Name des Projekts",
+      name: "Проект №6",
       image: "projekte/projekte6.png",
       class: "office",
       link: "../projekt/projekt.html"
     }],
     [{
-      name: "Name des Projekts",
+      name: "Проект №7",
       image: "projekte/projekte7.png",
       class: "restaurant",
       link: "../projekt/projekt.html"
     }],
     [{
-      name: "Name des Projekts",
+      name: "Проект №8",
       image: "projekte/projekte8.png",
       class: "hotel",
       link: "../projekt/projekt.html"
     }],
     [{
-      name: "Name des Projekts",
+      name: "Проект №9",
       image: "projekte/projekte9.png",
       class: "restaurant",
       link: "../projekt/projekt.html"
@@ -65,15 +65,15 @@ include ../../mixins/index
       +b.filter-bar 
         +e.list.UL
           +e.item.LI
-            +e.filter-link.is-active(data-filter="*") ALLE
+            +e.filter-link.is-active(data-filter="*") ВСІ
           +e.item.LI
-            +e.filter-link(data-filter=".office") OFFICE
+            +e.filter-link(data-filter=".office") Фільтр 1
           +e.item.LI
-            +e.filter-link(data-filter=".educational") EDUCATIONAL INSTITUTION
+            +e.filter-link(data-filter=".educational") Фільтр 2
           +e.item.LI
-            +e.filter-link(data-filter=".restaurant") RESTAURANT
+            +e.filter-link(data-filter=".restaurant") Фільтр 3
           +e.item.LI
-            +e.filter-link(data-filter=".hotel") HOTEL
+            +e.filter-link(data-filter=".hotel") Фільтр 4
 
       +b.projekte-wrapper#projekte-grid
         each card in filterCards

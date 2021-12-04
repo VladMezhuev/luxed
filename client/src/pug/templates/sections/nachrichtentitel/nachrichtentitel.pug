@@ -4,21 +4,21 @@ include ../../../mixins/index
 -
   const newsCards = [
     [{
-      name: "Nachrichtentitel",
+      name: "Новина 1",
       image: "news/news1.png",
-      date: "22.08.2018",
+      date: "05.12.2021",
       link: "../nachrichtentitel/nachrichtentitel.html"
     }],
     [{
-      name: "Nachrichtentitel",
+      name: "Новина 2",
       image: "news/news2.png",
-      date: "22.08.2018",
+      date: "05.12.2021",
       link: "../nachrichtentitel/nachrichtentitel.html"
     }],
     [{
-      name: "Nachrichtentitel",
+      name: "Новина 3",
       image: "news/news3.png",
-      date: "22.08.2018",
+      date: "05.12.2021",
       link: "../nachrichtentitel/nachrichtentitel.html"
     }],
   ]
@@ -58,7 +58,7 @@ include ../../../mixins/index
             include ../../elements/tags
             +b.last-review 
               +e.top 
-                +e.title.block-title.H2 3 thoughts on “Nachrichtentitel”
+                +e.title.block-title.H2 3 коментарі з новини
               +e.review-wrapper 
                 +b.review-card
                   +e.persone-info
@@ -79,8 +79,8 @@ include ../../../mixins/index
                     +e.review.text.--xs.--medium.P Id postea doming utamur qui. Mea labore viderer gloriatur cu, iriure principes ne qui. Tempor maiestatis duo ei, cum vero utinam reprimique an. Has mollis volutpat et. An placerat adipisci his, cibo efficiantur his ut.
 
             +b.new-form-wrapper
-              +e.title.block-title.H2 SCHREIBE EINEN KOMMENTAR
-              +e.info.text.--xs.--medium.P Deine E-Mail-Adresse wird nicht veröffentlicht. Erforderliche Felder sind mit * markiert.
+              +e.title.block-title.H2 Коментарі
+              +e.info.text.--xs.--medium.P Ваша електронна адреса не буде опублікована. Обов'язкові поля позначені *.
               include ../../components/new-form
 
         +e.column.--side
